@@ -84,5 +84,53 @@
       <xsl:text>Predgovori</xsl:text>
    </xsl:template>
    
+   <xsl:template match="tei:quote">
+      <xsl:choose>
+         <!-- Če ni znotraj odstavka -->
+         <xsl:when test="not(ancestor::tei:p)">
+            <blockquote>
+               <xsl:choose>
+                  <xsl:when test="@xml:id and not(parent::tei:cit[@xml:id])">
+                     <xsl:attribute name="id">
+                        <xsl:value-of select="@xml:id"/>
+                     </xsl:attribute>
+                  </xsl:when>
+                  <xsl:when test="parent::tei:cit[@xml:id]">
+                     <xsl:attribute name="id">
+                        <xsl:value-of select="parent::tei:cit/@xml:id"/>
+                     </xsl:attribute>
+                  </xsl:when>
+               </xsl:choose>
+               <xsl:apply-templates/>
+               <!-- glej spodaj obrazložitev pri procesiranju elementov cit -->
+               <!-- sem preuredil originalno pretvorbo in odstranil pogoj parent::tei:cit/tei:bibl/tei:author -->
+               <xsl:if test="parent::tei:cit/tei:bibl">
+                  <!-- odstranil na koncu parent::tei:cit/tei:bibl/tei:author -->
+                  <xsl:for-each select="parent::tei:cit/tei:bibl">
+                     <cite>
+                        <xsl:apply-templates/>
+                     </cite>
+                  </xsl:for-each>
+               </xsl:if>
+            </blockquote>
+         </xsl:when>
+         <!-- Če pa je znotraj odstavka, ga damo samo v element q, se pravi v narekovaje. -->
+         <xsl:otherwise>
+            <q>
+               <xsl:apply-templates/>
+            </q>
+         </xsl:otherwise>
+      </xsl:choose>
+   </xsl:template>
+   <!-- Če je naveden tudi avtor citata, damo predhodno element quote v parent element cit
+         in mu dodamo še sibling element bibl
+    -->
+   <doc xmlns="http://www.oxygenxml.com/ns/doc/xsl">
+      <desc>Preuredim template iz tei:bibl[tei:author] v tei:cit/tei:bibl</desc>
+   </doc>
+   <xsl:template match="tei:cit/tei:bibl">
+      <!-- ta element pustimo prazen,ker ga procesiroma zgoraj v okviru elementa quote -->
+   </xsl:template>
+   
    
 </xsl:stylesheet>
