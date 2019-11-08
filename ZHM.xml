@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ZHM">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -117,8 +117,11 @@
                         without the prior permission of the publisher.</p>
                     <p rend="CIP"><![CDATA[]]></p>
                 </availability>
-                <idno type="ISBN" subtype="epub">???978-961-05-0105-3</idno>
-                <idno type="COBISS.ID" subtype="epub">???123456789</idno>
+                <idno type="ISBN">
+                    <idno type="html">ISBN  (html)</idno>
+                    <idno type="epub">ISBN  (epub)</idno>
+                </idno>
+                <idno type="cobiss"></idno>
                 <idno type="price" subtype="epub">19</idno>
             </publicationStmt>
             <sourceDesc>
@@ -718,7 +721,7 @@
             </div>
         </front>
         <body>
-            <div type="part" xml:id="ch01">
+            <div type="chapter" xml:id="ch01">
                 <head>MITIČNI ZAČETKI ZGODOVINOPISJA</head>
                 <div>
                     <head>Mitični začetki zgodovinopisja</head>
@@ -1447,7 +1450,7 @@
                     </div>
                 </div>
             </div>
-            <div type="part" xml:id="ch02">
+            <div type="chapter" xml:id="ch02">
                 <head>ARHAJSKO IN KLASIČNO ZGODOVINOPISJE</head>
                 <div>
                     <head>Arhajsko in klasično zgodovinopisje</head>
@@ -4471,7 +4474,7 @@
                     </div>
                 </div>
             </div>
-            <div type="part" xml:id="ch03">
+            <div type="chapter" xml:id="ch03">
                 <head>POMEN FILOZOFOV IN GOVORNIKOV ZA ZGODOVINOPISJE</head>
                 <div>
                     <head>Pomen filozofov in govornikov za zgodovinopisje</head>
@@ -6434,8 +6437,8 @@
                     </div>
                 </div>
             </div>
-            <div type="ss2" xml:id="ch04">
-                <head> ZGODOVINOPISJE 4. STOLETJA IN HELENISTIČNE DOBE</head>
+            <div type="chapter" xml:id="ch04">
+                <head>ZGODOVINOPISJE 4. STOLETJA IN HELENISTIČNE DOBE</head>
                 <docAuthor>Marjeta Šašel Kos</docAuthor>
                 <p>Iz pozne antike je ohranjen seznam desetih najboljših grških zgodovinarjev. Ti so
                     bili: Herodot, Tukidid, Ksenofont, Filist, Teopomp, Efor, Anaksimen, Kalisten,
@@ -7559,7 +7562,7 @@
                     </div>
                 </div>
             </div>
-            <div type="ss2" xml:id="ch05">
+            <div type="chapter" xml:id="ch05">
                 <head>ZAČETKI RIMSKEGA ZGODOVINOPISJA</head>
                 <p>Rimska zgodovinopisna tradicija se je razvila iz povsem drugačnih zametkov kot
                     grška; medtem ko je grško zgodovinopisje vzniknilo iz racionalističnega
@@ -8826,7 +8829,7 @@
                     </div>
                 </div>
             </div>
-            <div type="ss2" xml:id="ch06">
+            <div type="chapter" xml:id="ch06">
                 <head>GRŠKI ZGODOVINARJI IN GEOGRAFI RIMSKEGA OBDOBJA</head>
                 <div type="ss3">
                     <head>Zgodovinarji</head>
@@ -11973,7 +11976,7 @@
                     </div>
                 </div>
             </div>
-            <div type="ss2" xml:id="ch07">
+            <div type="chapter" xml:id="ch07">
                 <head>RIMSKI ZGODOVINARJI IZ ČASA PRINCIPATA</head>
                 <p>Zgodovinopisje je bilo literarna zvrst in temu primerno retorično obarvano;
                     zanimivo je, da se je še vse do Amijana Marcelina javno prebiralo. Teoretično je
@@ -15631,7 +15634,7 @@
                     </div>
                 </div>
             </div>
-            <div type="ss2" xml:id="ch08">
+            <div type="chapter" xml:id="ch08">
                 <head>BIOGRAFIJA IN BIOGRAFSKO ZGODOVINOPISJE</head>
                 <p>»Biografija«, ki že v antiki predstavlja posebno zvrst, in »biografsko
                     zgodovinopisje« nista sopomenki, čeprav je v praksi med njima večkrat težko
@@ -17167,7 +17170,7 @@
                     </div>
                 </div>
             </div>
-            <div type="ss2" xml:id="ch09">
+            <div type="chapter" xml:id="ch09">
                 <head>POZNORIMSKO IN POZNOANTIČNO ZGODOVINOPISJE</head>
                 <p>Po markomanskih vojnah, ki so v zahodnem delu rimskega imperija predstavljale
                     veliko prelomnico, se je življenje po vzponu Septimija Severa na prestol leta
@@ -19423,7 +19426,7 @@
                     </div>
                 </div>
             </div>
-            <div type="ss2" xml:id="ch10">
+            <div type="chapter" xml:id="ch10">
                 <head>ZGODOVINOPISJE SREDNJEGA VEKA</head>
                 <p>Ne glede na vse kasnejše delitve kontinenta, ki je to postal predvsem zaradi
                     lastnega kulturnega imperializma, lahko upravičeno trdimo, da je Evropa v
@@ -24429,7 +24432,7 @@
                     </div>
                 </div>
             </div>
-            <div type="ss2" xml:id="ch11">
+            <div type="chapter" xml:id="ch11">
                 <head>RENESANSA</head>
                 <div type="ss3" xml:id="ch11.01">
                     <head>Ponovno odkritje zgodovine in postopna sekularizacija
@@ -24897,7 +24900,7 @@
                     </div>
                 </div>
             </div>
-            <div type="ss2" xml:id="ch12">
+            <div type="chapter" xml:id="ch12">
                 <head>STUDIUM HISTORIAE NA PRAGU MODERNE DOBE</head>
                 <div type="ss3">
                     <head>Zgodovinopisje v času reformacije in protireformacije</head>
@@ -25734,7 +25737,7 @@
                     </div>
                 </div>
             </div>
-            <div type="ss2" xml:id="ch13">
+            <div type="chapter" xml:id="ch13">
                 <head>RAZSVETLJENSKI KONCEPT ZGODOVINOPISJA</head>
                 <p>Čeprav smo se nekaterih značilnosti razsvetljenstva dotaknili že v prejšnjem
                     poglavju se v srečanje z Voltairjem in druščino ne moremo spustiti brez kratkega
@@ -26764,7 +26767,7 @@
                     </div>
                 </div>
             </div>
-            <div type="ss2" xml:id="ch14">
+            <div type="chapter" xml:id="ch14">
                 <head>PO ZGLEDU LITERATURE</head>
                 <div type="ss3" xml:id="ch14.01">
                     <head>Romantično zgodovinopisje</head>
@@ -27884,7 +27887,7 @@
                     </div>
                 </div>
             </div>
-            <div type="ss2" xml:id="ch15">
+            <div type="chapter" xml:id="ch15">
                 <head>ZGODOVINA – ZNANOST O NARODIH</head>
                 <p>Herodota so že v antiki imenovali za očeta zgodovine, Voltairja se je naziv oče
                         moderne<hi rend="italic"> </hi>zgodovine oprijel v 19. stoletju, obema pa
@@ -29327,7 +29330,7 @@
                     </div>
                 </div>
             </div>
-            <div type="ss2" xml:id="ch16">
+            <div type="chapter" xml:id="ch16">
                 <head>MODERNO ZGODOVINOPISJE</head>
                 <p>Med prve, ki so ob prenovi historične pripovedi zmogli duhovito, emancipatorično,
                     predvsem pa samokritično refleksijo sprememb v »managementu templja« boginje
@@ -30892,7 +30895,7 @@
                     </div>
                 </div>
             </div>
-            <div type="ss2" xml:id="ch17">
+            <div type="chapter" xml:id="ch17">
                 <head>»NOVA ZGODOVINA«</head>
                 <p>Za znamenito francosko revijo <hi rend="italic">Revue de Synthese L’Evolution de
                         L’Humanite</hi>, ki jo je leta 1900 ustanovil Henri Berr<note place="foot"
@@ -32271,7 +32274,7 @@
                     </div>
                 </div>
             </div>
-            <div type="ss2" xml:id="ch18">
+            <div type="chapter" xml:id="ch18">
                 <head>OBJEKTIVNOST ZGODOVINE V OČEH SEVERNOAMERIŠKIH ZGODOVINARJEV</head>
                 <p>V razpravi o objektivnosti zgodovine med zgodovinarji Združenih držav ni bilo
                     prelomnih dogodkov, značilnih za tokove v evropski historiografiji, ki je v tem
@@ -32635,7 +32638,7 @@
                     </div>
                 </div>
             </div>
-            <div type="ss2" xml:id="ch19">
+            <div type="chapter" xml:id="ch19">
                 <head>ZGODOVINOPISJE VISOKE MODERNE</head>
                 <p>Po precej dolgem obdobju, ko je razpravo o statusu historične predstavitve
                     obvladovala filozofija zgodovine, so začeli tudi tisti zgodovinarji, ki so prej
@@ -37475,7 +37478,7 @@
                     </div>
                 </div>
             </div>
-            <div type="ss2" xml:id="ch20">
+            <div type="chapter" xml:id="ch20">
                 <head>NOVA KULTURNA ZGODOVINA ALI HISTORIČNA ANTROPOLOGIJA!?</head>
                 <div type="ss3">
                     <head>Med univerzalno resnico in polifonijo interpretacij<note place="foot"
@@ -38748,7 +38751,7 @@
                     </div>
                 </div>
             </div>
-            <div type="ss2" xml:id="ch21">
+            <div type="chapter" xml:id="ch21">
                 <head>NAMESTO ZAKLJUČKA</head>
                 <p>Podobno kot vrsta drugih delov knjige je tudi pričujoči sklep posledica vsebinske
                     redakcije, ki jo je omogočil prevod v srbščino. To je bila obenem tudi prva

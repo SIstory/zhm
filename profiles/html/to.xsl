@@ -60,7 +60,7 @@
    <xsl:param name="outputDir">docs/</xsl:param>
    
    <xsl:param name="homeLabel">Založba ZRC</xsl:param>
-   <xsl:param name="homeURL">https://dariah-si.github.io/Prepovedane/</xsl:param>
+   <xsl:param name="homeURL">https://SIstory.github.io/zhm/</xsl:param>
    
    <xsl:param name="splitLevel">0</xsl:param>
    
@@ -81,27 +81,8 @@
    </doc>
    <xsl:template name="nav-front-head">
       <xsl:param name="thisLanguage"/>
-      <xsl:text>Predgovor</xsl:text>
+      <xsl:text>Predgovori</xsl:text>
    </xsl:template>
-   
-   <doc xmlns="http://www.oxygenxml.com/ns/doc/xsl">
-      <desc>Novo ime za glavno vsebino (glavna navigacija)</desc>
-      <param name="thisLanguage"></param>
-   </doc>
-   <xsl:template name="nav-body-head">
-      <xsl:param name="thisLanguage"/>
-      <xsl:text>Uvodna študija</xsl:text>
-   </xsl:template>
-   
-   <doc xmlns="http://www.oxygenxml.com/ns/doc/xsl">
-      <desc>Novo ime za izpis naziva priloge na gornji navigaciji</desc>
-      <param name="thisLanguage"></param>
-   </doc>
-   <xsl:template name="nav-appendix-head">
-      <xsl:param name="thisLanguage"/>
-      <xsl:text>Zbirka podatkov</xsl:text>
-   </xsl:template>
-   
    
    
 </xsl:stylesheet>
