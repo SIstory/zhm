@@ -65,7 +65,7 @@
              <edition>Tretja izdaja, ki je hkrati tudi prva e-izdaja, temelji na drugi (slovenski) izdaji iz leta 2016, v
                     katero pa je bilo vključeno tudi tam izpuščeno poglavje iz prve izdaje, "Pomen
                     filozofov in govornikov za zgodovinopisje".</edition>
-            <funder>Pretvorbo je omogočila Javna agencija za knjigo iz naslova razpisa za leto
+             <funder>Pretvorbo je omogočila Javna agencija za knjigo iz naslova razpisa za leto
                     2019.</funder>
             <sponsor>ZRC SAZU, Inštitut za kulturno zgodovino, Založba ZRC</sponsor>
          </editionStmt>
@@ -105,7 +105,7 @@
                </persName>
             </authority>
             <pubPlace>Ljubljana</pubPlace>
-            <pubPlace>http://hdl.handle.net/11686/41748</pubPlace>
+             <pubPlace><ref target="http://hdl.handle.net/11686/41748">http://hdl.handle.net/11686/41748</ref></pubPlace>
             <date when="2019">2019</date>
             <availability status="restricted">
                <p>© 2006, 2016, 2019 ZRC SAZU, Inštitut za kulturno zgodovino, Založba ZRC</p>
@@ -118,6 +118,9 @@
                         any means, electronic, mechanical, photocopying, recording or otherwise,
                         without the prior permission of the publisher.</p>
                <p rend="CIP"/>
+                <p rend="CIP"><![CDATA[Kataložni zapis o publikaciji (CIP) pripravili v Narodni in univerzitetni knjižnici v Ljubljani<br/>
+<a href="http://COBISS.SI" target="_blank">COBISS.SI</a>-ID=<a href="http://cobiss6.izum.si/scripts/cobiss?command=DISPLAY&amp;base=99999&amp;rid=302741504&amp;fmt=13&amp;lani=si" target="_blank">302741504</a><br/>
+ISBN 978-961-05-0238-8 (html)<br/>]]></p>
             </availability>
             <idno type="ISBN">
                <idno type="html">ISBN  (html)</idno>
