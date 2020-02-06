@@ -379,20 +379,9 @@
             </change>
         </revisionDesc>
     </teiHeader>
-    <facsimile>
-        <surface xml:id="front_out">
-            <graphic url="media/ZHM.jpg"/>
-        </surface>
-        <surface xml:id="covers">
-            <graphic url="media/ZHM_1_front.jpg"/>
-            <graphic url="media/ZHM_2_front.jpg"/>
-            <graphic url="media/ZHM_srbska_front.jpg"/>
-            <graphic url="media/ZHM_PRVA_front.jpg"/>
-        </surface>
-    </facsimile>
     <text>
         <front>
-            <titlePage facs="#front_out">
+            <titlePage>
                 <docAuthor>
                     <forename>Oto</forename>
                     <surname>Luthar</surname>

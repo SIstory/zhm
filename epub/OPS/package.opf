@@ -1,0 +1,203 @@
+
+<package xmlns="http://www.idpf.org/2007/opf"
+         unique-identifier="pub-id"
+         version="3.0"
+         prefix="rendition: http://www.idpf.org/vocab/rendition#">
+   <metadata xmlns:dcterms="http://purl.org/dc/terms/"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:opf="http://www.idpf.org/2007/opf">
+      <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/" id="title">Zgodovina historične misli</dc:title>
+      <meta property="rendition:layout">reflowable</meta>
+      <meta property="rendition:spread">auto</meta>
+      <meta refines="#title" property="title-type">main</meta>
+      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/" id="creator"> Oto   Luthar ,  Gregor   Pobežin </dc:creator>
+      <meta refines="#creator" property="role" scheme="marc:relators">aut</meta>
+      <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">en</dc:language>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">antika</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">zgodovina</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">zgodovinarji</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">zgodovinopisje</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">zgodovinski viri</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Antiquity</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">historians</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">historical sources</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">historiography</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">history</dc:subject>
+      <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/" id="pub-id">
+                    ISBN (html)
+                    ISBN (epub)
+                </dc:identifier>
+      <meta refines="#pub-id"
+            property="identifier-type"
+            scheme="onix:codelist5">15</meta>
+      <dc:description xmlns:dc="http://purl.org/dc/elements/1.1/">Zgodovina historične misli /  Oto   Luthar ,  Gregor   Pobežin ,  Marjeta   Šašel Kos , in  Nada   Grošelj Gregor PobežinOto Luthar</dc:description>
+      <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Založba ZRC, ZRC SAZU zalozba@zrc-sazu.si Novi trg 2 1000 Ljubljana SI-SLOVENIA, Izdajatelj ZRC SAZU, Inštitut za kulturno zgodovino, Za založnika Oto Luthar, Glavni urednik založbe Pogačnik Aleš, Uredil Pobežin Gregor</dc:publisher>
+      <dc:date xmlns:dc="http://purl.org/dc/elements/1.1/" id="epub-publication">2019</dc:date>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">Creative Commons Attribution</dc:rights>
+      <meta name="cover" content="cover-image"/>
+      <meta property="dcterms:modified">2020-02-05T22:17:20Z</meta>
+   </metadata>
+   <manifest>
+      <item href="cover.jpg"
+            id="cover-image"
+            properties="cover-image"
+            media-type="image/jpeg"/>
+      <item id="css" href="stylesheet.css" media-type="text/css"/>
+      <item id="print.css" href="print.css" media-type="text/css"/>
+      <item href="titlepage.html"
+            id="titlepage"
+            media-type="application/xhtml+xml"/>
+      <item href="titlepageback.html"
+            id="titlepageback"
+            media-type="application/xhtml+xml"/>
+      <item id="toc"
+            properties="nav"
+            href="epubtoc.html"
+            media-type="application/xhtml+xml"/>
+      <item id="start" href="index.html" media-type="application/xhtml+xml"/>
+      <item href="cip.html" id="cip" media-type="application/xhtml+xml"/>
+      <item href="titleType.html"
+            id="titleType"
+            media-type="application/xhtml+xml"/>
+      <item href="epigraph.html"
+            media-type="application/xhtml+xml"
+            id="section1"/>
+      <item href="preface2.html"
+            media-type="application/xhtml+xml"
+            id="section2"/>
+      <item href="preface1.html"
+            media-type="application/xhtml+xml"
+            id="section3"/>
+      <item href="preambule.html"
+            media-type="application/xhtml+xml"
+            id="section4"/>
+      <item href="preface.html"
+            media-type="application/xhtml+xml"
+            id="section5"/>
+      <item href="ch01.html" media-type="application/xhtml+xml" id="section6"/>
+      <item href="ch02.html" media-type="application/xhtml+xml" id="section19"/>
+      <item href="ch03.html" media-type="application/xhtml+xml" id="section60"/>
+      <item href="ch04.html" media-type="application/xhtml+xml" id="section79"/>
+      <item href="ch05.html" media-type="application/xhtml+xml" id="section104"/>
+      <item href="ch06.html" media-type="application/xhtml+xml" id="section110"/>
+      <item href="ch07.html" media-type="application/xhtml+xml" id="section142"/>
+      <item href="ch08.html" media-type="application/xhtml+xml" id="section179"/>
+      <item href="ch09.html" media-type="application/xhtml+xml" id="section197"/>
+      <item href="ch10.html" media-type="application/xhtml+xml" id="section217"/>
+      <item href="ch11.html" media-type="application/xhtml+xml" id="section276"/>
+      <item href="ch12.html" media-type="application/xhtml+xml" id="section279"/>
+      <item href="ch13.html" media-type="application/xhtml+xml" id="section297"/>
+      <item href="ch14.html" media-type="application/xhtml+xml" id="section309"/>
+      <item href="ch15.html" media-type="application/xhtml+xml" id="section315"/>
+      <item href="ch16.html" media-type="application/xhtml+xml" id="section328"/>
+      <item href="ch17.html" media-type="application/xhtml+xml" id="section336"/>
+      <item href="ch18.html" media-type="application/xhtml+xml" id="section344"/>
+      <item href="ch19.html" media-type="application/xhtml+xml" id="section349"/>
+      <item href="ch20.html" media-type="application/xhtml+xml" id="section379"/>
+      <item href="ch21.html" media-type="application/xhtml+xml" id="section388"/>
+      <item href="bibliogr.html"
+            media-type="application/xhtml+xml"
+            id="section394"/>
+      <item href="media/ZHM_PRVA_front.jpg"
+            id="image-1"
+            media-type="image/jpeg"/>
+      <item href="media/ZHM_srbska_front.jpg"
+            id="image-2"
+            media-type="image/jpeg"/>
+      <item href="media/ZHM_1_front.jpg" id="image-3" media-type="image/jpeg"/>
+      <item href="media/ZHM_2_front.jpg" id="image-4" media-type="image/jpeg"/>
+      <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+   </manifest>
+   <spine toc="ncx">
+      <itemref idref="titlepage" linear="yes"/>
+      <itemref idref="start" linear="yes"/>
+      <itemref idref="cip" linear="yes"/>
+      <itemref idref="titleType" linear="yes"/>
+      <itemref idref="section1" linear="yes"/>
+      <itemref idref="section2" linear="yes"/>
+      <itemref idref="section3" linear="yes"/>
+      <itemref idref="section4" linear="yes"/>
+      <itemref idref="section5" linear="yes"/>
+      <itemref idref="section6" linear="yes"/>
+      <itemref idref="section19" linear="yes"/>
+      <itemref idref="section60" linear="yes"/>
+      <itemref idref="section79" linear="yes"/>
+      <itemref idref="section104" linear="yes"/>
+      <itemref idref="section110" linear="yes"/>
+      <itemref idref="section142" linear="yes"/>
+      <itemref idref="section179" linear="yes"/>
+      <itemref idref="section197" linear="yes"/>
+      <itemref idref="section217" linear="yes"/>
+      <itemref idref="section276" linear="yes"/>
+      <itemref idref="section279" linear="yes"/>
+      <itemref idref="section297" linear="yes"/>
+      <itemref idref="section309" linear="yes"/>
+      <itemref idref="section315" linear="yes"/>
+      <itemref idref="section328" linear="yes"/>
+      <itemref idref="section336" linear="yes"/>
+      <itemref idref="section344" linear="yes"/>
+      <itemref idref="section349" linear="yes"/>
+      <itemref idref="section379" linear="yes"/>
+      <itemref idref="section388" linear="yes"/>
+      <itemref idref="section394" linear="yes"/>
+      <itemref idref="titlepageback" linear="no"/>
+   </spine>
+   <guide>
+      <reference type="text" href="titlepage.html" title="Cover"/>
+      <reference type="text" title="Start" href="index.html"/>
+      <reference type="text" title="Kolofon" href="cip.html"/>
+      <reference type="text" title="Kazalo vsebine" href="titleType.html"/>
+      <reference type="text" href="epigraph.html" title="§"/>
+      <reference type="text" href="preface2.html" title="PREDGOVOR (2019)"/>
+      <reference type="text" href="preface1.html" title="PREDGOVOR (2016)"/>
+      <reference type="text" href="preambule.html" title="PREAMBULA … DRUGIČ"/>
+      <reference type="text" href="preface.html" title="KULTURA IN POLITIKA SPOMINA"/>
+      <reference type="text" href="ch01.html" title="MITIČNI ZAČETKI ZGODOVINOPISJA"/>
+      <reference type="text"
+                 href="ch02.html"
+                 title="ARHAJSKO IN KLASIČNO ZGODOVINOPISJE"/>
+      <reference type="text"
+                 href="ch03.html"
+                 title="POMEN FILOZOFOV IN GOVORNIKOV ZA ZGODOVINOPISJE"/>
+      <reference type="text"
+                 href="ch04.html"
+                 title="ZGODOVINOPISJE 4. STOLETJA IN HELENISTIČNE DOBE"/>
+      <reference type="text"
+                 href="ch05.html"
+                 title="ZAČETKI RIMSKEGA ZGODOVINOPISJA"/>
+      <reference type="text"
+                 href="ch06.html"
+                 title="GRŠKI ZGODOVINARJI IN GEOGRAFI RIMSKEGA OBDOBJA"/>
+      <reference type="text"
+                 href="ch07.html"
+                 title="RIMSKI ZGODOVINARJI IZ ČASA PRINCIPATA"/>
+      <reference type="text"
+                 href="ch08.html"
+                 title="BIOGRAFIJA IN BIOGRAFSKO ZGODOVINOPISJE"/>
+      <reference type="text"
+                 href="ch09.html"
+                 title="POZNORIMSKO IN POZNOANTIČNO ZGODOVINOPISJE"/>
+      <reference type="text" href="ch10.html" title="ZGODOVINOPISJE SREDNJEGA VEKA"/>
+      <reference type="text" href="ch11.html" title="RENESANSA"/>
+      <reference type="text"
+                 href="ch12.html"
+                 title="STUDIUM HISTORIAE NA PRAGU MODERNE DOBE"/>
+      <reference type="text"
+                 href="ch13.html"
+                 title="RAZSVETLJENSKI KONCEPT ZGODOVINOPISJA"/>
+      <reference type="text" href="ch14.html" title="PO ZGLEDU LITERATURE"/>
+      <reference type="text" href="ch15.html" title="ZGODOVINA – ZNANOST O NARODIH"/>
+      <reference type="text" href="ch16.html" title="MODERNO ZGODOVINOPISJE"/>
+      <reference type="text" href="ch17.html" title="»NOVA ZGODOVINA«"/>
+      <reference type="text"
+                 href="ch18.html"
+                 title="OBJEKTIVNOST ZGODOVINE V OČEH SEVERNOAMERIŠKIH ZGODOVINARJEV"/>
+      <reference type="text" href="ch19.html" title="ZGODOVINOPISJE VISOKE MODERNE"/>
+      <reference type="text"
+                 href="ch20.html"
+                 title="NOVA KULTURNA ZGODOVINA ALI HISTORIČNA ANTROPOLOGIJA!?"/>
+      <reference type="text" href="ch21.html" title="NAMESTO ZAKLJUČKA"/>
+      <reference type="text" href="bibliogr.html" title="LITERATURA"/>
+      <reference href="titlepageback.html" type="text" title="About this book"/>
+   </guide>
+</package>

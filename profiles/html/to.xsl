@@ -60,7 +60,7 @@
    <xsl:param name="outputDir">docs/</xsl:param>
    
    <xsl:param name="homeLabel">Založba ZRC</xsl:param>
-   <xsl:param name="homeURL">https://SIstory.github.io/zhm/</xsl:param>
+   <xsl:param name="homeURL">https://doi.org/10.3986/9789610501985</xsl:param>
    
    <xsl:param name="splitLevel">0</xsl:param>
    
@@ -70,10 +70,12 @@
    <xsl:param name="chapterAsSIstoryPublications">false</xsl:param>
    
    <!-- V html/head izpisani metapodatki -->
-   <xsl:param name="description"></xsl:param>
-   <xsl:param name="keywords"></xsl:param>
-   <xsl:param name="title"></xsl:param>
+   <xsl:param name="description">Oto Luthar, Gregor Pobežin, Marjeta Šašel Kos, Nada Grošelj, Zgodovina historične misli: od Homerja do začetka 21. stoletja, Tretja izdaja, Založba ZRC, ZRC SAZU</xsl:param>
+   <xsl:param name="keywords">zgodovinski viri, zgodovinarji</xsl:param>
+   <xsl:param name="title">Zgodovina historične misli: od Homerja do začetka 21. stoletja</xsl:param>
    
+   <!-- odstranim pri spodnjem parametru true -->
+   <xsl:param name="numberParagraphs"></xsl:param>
    
    <doc xmlns="http://www.oxygenxml.com/ns/doc/xsl">
       <desc>Novo ime za front front/div</desc>
@@ -84,6 +86,9 @@
       <xsl:text>Predgovori</xsl:text>
    </xsl:template>
    
+   <doc xmlns="http://www.oxygenxml.com/ns/doc/xsl">
+      <desc></desc>
+   </doc>
    <xsl:template match="tei:quote">
       <xsl:choose>
          <!-- Če ni znotraj odstavka -->

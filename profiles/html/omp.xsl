@@ -28,7 +28,7 @@
     </xsl:template>
     <xsl:template name="bodyEndHook"/>
     
-    <xsl:template match="tei:divGen[@xml:id = ('teiHeader','titleType','search')]">
+    <xsl:template match="tei:divGen[@xml:id = ('titleType','search')]">
         <!-- ne procesiram -->
     </xsl:template>
     
