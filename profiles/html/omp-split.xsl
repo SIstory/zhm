@@ -41,4 +41,68 @@
         <xsl:apply-templates/>
     </xsl:template>
     
+    <!-- zunanje povezave se odpirajo v novem oknu: target="_blank" -->
+    <xsl:template name="makeExternalLink">
+        <xsl:param name="ptr" as="xs:boolean"  select="false()"/>
+        <xsl:param name="dest"/>
+        <xsl:param name="title"/>
+        <xsl:param name="class">link_<xsl:value-of select="local-name(.)"/>
+        </xsl:param>
+        <xsl:element name="{$linkElement}" namespace="{$linkElementNamespace}">
+            <!-- dodam atribut target _blank -->
+            <xsl:attribute name="target">_blank</xsl:attribute>
+            <xsl:if test="(self::tei:ptr or self::tei:ref) and @xml:id">
+                <xsl:attribute name="id" select="@xml:id"/>
+            </xsl:if>
+            <xsl:if test="$title">
+                <xsl:attribute name="title" select="$title"/>
+            </xsl:if>
+            <xsl:call-template name="makeRendition">
+                <xsl:with-param name="default" select="$class"/>
+            </xsl:call-template>
+            <xsl:if test="@type and not($outputTarget=('epub3', 'html', 'html5'))">
+                <xsl:attribute name="type">
+                    <xsl:value-of select="@type"/>
+                </xsl:attribute>
+            </xsl:if>
+            <xsl:attribute name="{$linkAttribute}" namespace="{$linkAttributeNamespace}">
+                <xsl:sequence select="$dest"/>
+                <xsl:if test="contains(@from,'id (')">
+                    <xsl:text>#</xsl:text>
+                    <xsl:value-of select="substring(@from,5,string-length(normalize-space(@from))-1)"/>
+                </xsl:if>
+            </xsl:attribute>
+            <xsl:choose>
+                <xsl:when test="@n">
+                    <xsl:attribute name="title"  namespace="{$linkAttributeNamespace}">
+                        <xsl:value-of select="@n"/>
+                    </xsl:attribute>
+                </xsl:when>
+            </xsl:choose>
+            <xsl:call-template name="xrefHook"/>
+            <xsl:choose>
+                <xsl:when test="$dest=''">??</xsl:when>
+                <xsl:when test="$ptr">
+                    <xsl:element name="{$urlMarkup}" namespace="{$linkElementNamespace}">
+                        <xsl:choose>
+                            <xsl:when test="starts-with($dest,'mailto:')">
+                                <xsl:value-of select="substring-after($dest,'mailto:')"/>
+                            </xsl:when>
+                            <xsl:when test="starts-with($dest,'file:')">
+                                <xsl:value-of select="substring-after($dest,'file:')"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:value-of select="$dest"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:element>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:apply-templates/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:element>
+    </xsl:template>
+    
+    
 </xsl:stylesheet>
